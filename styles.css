@@ -1,0 +1,116 @@
+html {
+  font-family: 'Nunito';
+}
+
+body {
+  background-color: #0A0A0A;
+  color: white;
+}
+
+.boards {
+  display: flex;
+  margin-top: 32px;
+}
+
+.board {
+  position: relative;
+  background: #0f0f0f;
+  border: 1px solid #5B755315;
+  border-radius: 18px;
+  margin: 0 16px;
+
+}
+
+.board svg {
+
+  position: absolute;
+  top: 45px;
+  left: 16px;
+  padding: 0;
+  
+  fill: #5B755377;
+  margin-right: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+
+.board svg:hover {
+  fill: #7b9c71;
+  
+}
+
+.board h3 {
+  padding: 16px;
+  margin: 0;
+  color: #5B7553cc;
+}
+
+.dropzone {
+  padding: 16px;
+  min-width: 282px;
+  min-height: 200px;
+
+}
+
+.card {
+  background-color: #161616;
+  padding: 16px;
+  box-shadow: 0 3px 2px -1px #5B755377;
+  width: 250px;
+  height: 60px;
+  margin: 25px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: grab;
+  transition: 0.5s;
+  color: #696969;
+  
+
+}
+
+.card:hover {
+  box-shadow: 0 3px 2px -1px #7b9c71;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.status {
+  width: 30px;
+  height: 8px;
+  background-color: gray;
+  margin-bottom: 16px;
+  border-radius: 8px;
+
+}
+
+.status.blue {
+  background-color: #099FFF;
+}
+
+.status.red {
+  background-color: #FF3300;
+}
+
+.status.yellow {
+  background-color: #E6FB04;
+}
+
+.highlight {
+  background-color: #fd951f08;
+}
+
+.card, .dropzone {
+  transition: 0.4s;
+}
+
+.is-dragging {
+  cursor: grab;
+  opacity: 0;
+  
+}
+
+.over {
+  background: #4cd13711;
+}

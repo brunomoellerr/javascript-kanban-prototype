@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Kanban</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="boards">
+    <div class="board">
+      <h3>Todo</h3>
+      <div class="dropzone">
+        <div class="card" draggable="true">
+          <div class="status blue"></div>
+          <div class="content">Backend Development</div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+    </div>
+    <div class="board">
+      <h3>In progress</h3>
+      <div class="dropzone">
+        <div class="card" draggable="true">
+          <div class="status red"></div>
+          <div class="content">Frontend Development</div>
+        </div>
+      </div>
+    </div>
+    <div class="board">
+      <h3>Done</h3>
+      <div class="dropzone">
+        <div class="card" draggable="true">
+          <div class="status yellow"></div>
+          <div class="content">Test Backend</div>
+        </div>
+        <div class="card" draggable="true">
+          <div class="status yellow"></div>
+          <div class="content">API Design</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js" defer></script>
+</body>
+</html>
